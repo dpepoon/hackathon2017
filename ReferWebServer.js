@@ -184,8 +184,8 @@ var commands_table = [
 
 /*!
  * Process the received voice data and return an array with its sections.
- * @param voice_command The received voice command.
- * @return The voice commands sections.
+ * param voice_command The received voice command.
+ * return The voice commands sections.
  */
 function getReceivedCommand(voice_command) {
   var rcvd_voice_cmd = [UNUSED, UNUSED, UNUSED, UNUSED];
@@ -220,8 +220,8 @@ function getReceivedCommand(voice_command) {
 
 /*!
  * Execute command a valid command.
- * @param voice_command The voice command array.
- * @return True if valid command; otherwise false;
+ * param voice_command The voice command array.
+ * return True if valid command; otherwise false;
  */
 function executeCommand(voice_command) {
   var numberOfSections = commands_table[0].length - 1;
