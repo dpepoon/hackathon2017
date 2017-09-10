@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>BakeWatch v1</title>
+  <link rel="stylesheet" href="/public/styles/styles.css">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <link rel="manifest" href="/manifest.json">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <script src="http://code.jquery.com/jquery-2.1.3.js"></script>
+  <script src="/public/scripts/vendors.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/public/scripts/scripts.js"></script>
+
+</body>
+
+  <nav class="demo">
+    <a href="#" class="brand">
+      <span>BakeWatch</span>
+    </a>
+
+    <!-- responsive-->
+    <!-- <input id="bmenub" type="checkbox" class="show"> -->
+    <!-- <label for="bmenub" class="burger pseudo button">menu</label> -->
+
+    <!-- <div class="menu">
+      <a href="#" class="">Live</a>        
+      <a href="#" class="">Share</a>
+      <a href="#" class="">Control</a>
+    </div> -->
+  </nav>
+
+  <div class="container">
+        
+    <div class="oven-image-container">
+      <img id="ovenImage" src="/public/image.jpg" width="640" height="480" alt="">
+      <img id="logo" src="/public/images/logo.png" width="151" height="94" alt="" style="display: none">
+    </div>
+
+    <div class="button-group">
+      <button id="btn-capture" class='success'>Capture Photo</button>
+      <button id="btn-light-toggle" class='success'>Light</button>
+      <button id="btn-share" class='success' >Share on Facebook</button>
+      <button id="btn-data">Get Oven Data</button>
+      <button id="btn-oven-off" class='error'>Turn Oven Off</button>
+    </div>
+
+    <div class="modal">
+      <input id="modal_1" type="checkbox" />
+      <label for="modal_1" class="overlay"></label>
+      <article>
+        <header>
+          <h3>Success!</h3>
+          <label for="modal_1" class="close">&times;</label>
+        </header>
+        <section class="content">
+          Your delicious food has been shared with your Facebook friends!
+        </section>
+        <footer>
+          <label for="modal_1" class="button success">
+            Ok
+          </label>
+        </footer>
+      </article>
+    </div>
+    
+  </div>
+
+</html>
+
